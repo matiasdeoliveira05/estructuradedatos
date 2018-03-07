@@ -1,0 +1,60 @@
+// creando clase //
+
+#pragma once
+class resta
+{ 
+private:
+	int numero1;
+	int numero2;
+	int numero3;
+	int result;
+
+
+public:
+	resta(void);
+	~resta(void);
+	int resultado(int n1,int n2,int n3);
+};
+
+// creando programa principal //
+// resta.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "resta.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+
+void main ()
+{
+	resta resta1;
+	int a,b,c;
+	cout<< "ingrese el numero 1 que se va a restar:"<<endl;
+	cin >> a;
+	cout <<" ingrese el segundo numero que se va a restar:"<< endl;
+	cin >> b;
+	cout << " ingrese el tercer numero que se va a restar:"<< endl;
+	cin >> c;
+	cout <<" el resultado es:"<< resta1.resultado(a,b,c);
+
+	getch();
+	
+}
+
+
+
+resta::resta(void)
+{
+}
+
+
+resta::~resta(void)
+{
+}
+int resta::resultado(int n1,int n2,int n3)
+{ result= n1-n2-n3;
+return result;
+}
