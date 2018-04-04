@@ -1,0 +1,38 @@
+// circulo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+# include "circulos.h"
+# include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{ circulos perimetro1,area1; 
+	int op,r; 
+do{
+	cout<<"------menu-------"<<endl;
+    cout<<"----1.perimetro----"<<endl;
+	cout<<"----2.area-------"<<endl;
+	cout<<"----3.salir------"<<endl;
+	do{
+		cout<<"Ingrese el numero de su eleccion: ";
+		cin>>op;
+	}while(op!=0 && op>3);
+	switch (op)
+	{ case 1:
+		{cout<<" ingrese el radio: ";
+		cin>> r;
+		perimetro1.perimetro(r);
+		break;}
+	case 2:
+		{cout<<"ingrese el radio: ";
+		cin>>r;
+		area1.area(r);
+		break;}
+	case 3:
+		{cout<<"chau, y no vuelva a insistir! ";
+		break;}
+	}}while(op!=3);
+	getch();
+}
